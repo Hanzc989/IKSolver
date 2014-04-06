@@ -1,0 +1,6 @@
+*.save
+*.cbp
+*.depend
+*.layout
+*.txt
+*.o
