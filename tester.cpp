@@ -23,7 +23,7 @@
 
 
 #include "IKSolve.h"
-#include "Vector.h"
+#include "VectorLib/Vector.h"
 
 #include <cmath>
 #include <iostream>

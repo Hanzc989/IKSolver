@@ -1,0 +1,3 @@
+[submodule "VectorLib"]
+	path = VectorLib
+	url = https://github.com/fughilli/VectorLib

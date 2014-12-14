@@ -64,6 +64,11 @@ int solve(float* angles, const float ranges[][2], const float* radii, const int&
     {
         do
         {
+            if(solve_counter >= TIMEOUT)
+            {
+                //cout << "<" << target.x << ", " << target.y << ">\t";
+                break;
+            }
             // Forward solve for the current end effector position
             curPos = forwardSolve(angles);
             solve_counter++;
@@ -120,11 +125,7 @@ int solve(float* angles, const float ranges[][2], const float* radii, const int&
                 i = 0;
             }
 
-            if(solve_counter >= TIMEOUT)
-            {
-                cout << "<" << target.x << ", " << target.y << ">\t";
-                break;
-            }
+
         }
         while(error > reqError);
         if(solve_counter >= TIMEOUT)

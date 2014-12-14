@@ -21,7 +21,7 @@
 #ifndef _IK_SOLVE_H_
 #define _IK_SOLVE_H_
 
-#include "Vector.h"
+#include "VectorLib/Vector.h"
 
 //#define LUT_SIZE 128
 //#define LUT_HALF_WAVE 64
